@@ -11,6 +11,13 @@ body {
 	font-size: 60px;
 	text-align: center;
 	text-shadow: 0 0 10px #006600;
+	-transition: text-shadow 1s;
+	-moz-transition: text-shadow 1s;
+	-webkit-transition: text-shadow 1s;
+}
+
+#title:hover {
+	text-shadow: 0 0 10px red;
 }
 
 .card {
