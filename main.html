@@ -12,12 +12,24 @@
 
 	<center>
 		<table cellspacing = 30px> <tr>
-			<td> <div class = "container"> <div class = "card" id = "playerCard"> </div> </div> </td>
+			<td>
+				<div class = "container"> <div class = "card" id = "playerCard" onclick = "play ()"> </div> </div> 
+			</td>
 			<td> <div class = "container"> <div class = "card" id = "computerCard"> </div> </div> </td>
 			</tr>
 		</table>
+
+		<table cellspacing = 3px> <tr>
+			<td> <div class = "score" id = "playerScore" padding=10px> 0 </div> </td>
+			<td> <div class = "score" id = "computerScore" padding=10px> 0 </div> </td>
+		</tr>
+		</table>
+
 	</center>
 
+
+
+<div padding=10px id = "bubble"> Hello. I'm your computer. Your cards are the ones on left. It's 1/2 packet. If your card is greater than mine, you gain a point. Else, I gain a point. Click your card to flip it. </div>
 
 <div id = "copyright"> © dianamin 
 	<br>

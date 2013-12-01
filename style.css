@@ -1,5 +1,6 @@
 body {
 	font-family: Segoe Ui;
+	overflow: hidden;
 	-moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -53,4 +54,41 @@ body {
 
 #copyright:hover {
     bottom: 0px;
+}
+
+#bubble {
+	width: 300px;
+	position: absolute;
+	bottom: 200px;
+	right: 30px;
+	background-color: #CCFFCC;
+	border-top-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+	border-bottom-left-radius: 35px;
+	box-shadow: 0 0 10px;
+	padding: 20px;
+	font-size: 18px;
+	color: #006600;
+}
+
+.score {
+	color: white;
+	background-color: #006600;
+	font-size: 20px;
+	width: 50px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#button {
+	color: #006600;
+	font-size: 20px;
+	background-color: lightgray;
+	-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-webkit-transition: background-color 1s;
+}
+
+#button:hover {
+	background-color: red;
 }
