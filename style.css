@@ -21,6 +21,36 @@ body {
 	border-color:red;
 	background-color:white;
 	font-size: 30px;
+	text-align: center;
 	color: #006600;
 }
 
+.container {
+	padding:10px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #006600;
+	border-top-left-radius: 35px;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 35px;
+	box-shadow: 0 10px 0 #006600;
+}
+
+#copyright {
+    position:absolute;
+    bottom: -30px;
+    padding-bottom:10px;
+    padding-left: 2px;
+    color:darkgray;
+    font-size:15px;
+    background-color: #2E2E1F;
+    width: 150px;
+    -transition: bottom 0.5s;
+    -webkit-transition: bottom 0.5s;
+    -moz-transition: bottom 0.5s;
+} 
+
+#copyright:hover {
+    bottom: 0px;
+}
