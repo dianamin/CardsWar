@@ -16,13 +16,13 @@ var message = document.getElementById('bubble');
 var getNumber = function () {
 	if (totalUsed === 12) {
 		for (var i = 0; i < 13; i++)
-			if (used[i] < 4) return i;
+			if (used[i] < 2) return i;
 	}
 	else {
 		var x = Math.floor (Math.random ()*13);
-		while (used[x] > 4) x = Math.floor (Math.random ()*13);
+		while (used[x] > 2) x = Math.floor (Math.random ()*13);
 		used[x]++;	
-		if (used[x] === 4) totalUsed++;
+		if (used[x] === 2) totalUsed++;
 		return x;	
 	}
 }
@@ -50,6 +50,15 @@ var play = function () {
 		if (myCard < compCard) lose ();
 		else if (myCard > compCard) win ();
 		else message.innerHTML = "It's a draw. Flip."
+		if (totalUsed === 12) {
+			message.innerHTML = "Good game!";
+			if (playerScoreValue>computerScoreValue) alert ('You win! :D');
+			else {
+				if (playerScoreValue<computerScoreValue) alert ('I win! :D');
+				else alert ('We both win! :D');
+			}
+			location.reload ();
+		}
 	}, 500);
 	
 }
